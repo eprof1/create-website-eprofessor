@@ -2,15 +2,15 @@
 
 // student- update variables below this line
 
-var xeMail = "Your eMail";
+var xeMail = "ppaulson@hbci.com";
 
-var xFirstName = "Your First Name";
+var xFirstName = "Patrick";
 
-var xLastName = "Your Last Name";
+var xLastName = "Paulson";
 
-var xStarID = "Your StarID";
+var xStarID = "wp8798rh";
 
-var xSection = "Your Section";
+var xSection = "09";
 
 
 // student-do no modify variables below here, unless told to do so.
