@@ -1,0 +1,355 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap -->
+	<link href="../css/bootstrap.css" rel="stylesheet">
+
+    <!-- constant file to update email, firstname, lastname, starid, section on students' pages -->
+    <script src="../js/constants.js"></script>
+
+    <!-- something wrong with this file, does not load variables, esp for footer/license, added script tags throughout document -->
+    <!-- <script src="..js/main.js"></script> -->
+
+    <title>MIS202Summative03</title>
+
+
+</head>
+
+
+
+<body onload="setVariables()"> 
+
+
+  <form class="container-fluid" action="https://eprofessor.azurewebsites.net/code/ProcessFormData.asp" method="post" name="frmAssignment" id="frmAssignment">
+      <input name="InstID" type="hidden" id="InstID" value="00617282">
+   
+    <h1 class=" text-center">Written Communication</h1>
+
+    <div class="row col-lg-12">
+
+      <div class="col-lg-3">
+        <label class="text-primary" for="email">Email:</label>
+        <!-- Enter your winona.edu email address in the VALUE field below   GROK --> 
+        <input class="form-control" name="email" id="email"    type="email">
+        <script>document.getElementById("email").value = xeMail;</script>
+      </div>
+
+      <div class="col-lg-3">
+        <label class="text-primary" for="FirstName">First Name:</label>
+        <!-- Enter your first name in the VALUE field below   GROK --> 
+        <input class="form-control" name="FirstName" id="FirstName"  type="text">
+        <script>document.getElementById("FirstName").value = xFirstName;</script>
+      </div>
+      <div class="col-lg-3">
+        <label class="text-primary" for="LastName">Last Name:</label>
+        <!-- Enter your last name in the VALUE field below   GROK --> 
+        <input class="form-control" name="LastName" id="LastName"  type="text">
+        <script>document.getElementById("LastName").value = xLastName;</script>
+      </div>
+
+      <div class="col-lg-3">
+        <label class="text-primary" for="pin">StarID:</label>
+        <!-- Enter your starID in the VALUE field below   GROK -->         
+        <input class="form-control" name="pin" id="pin"  type="text">
+        <script>document.getElementById("pin").value = xStarID;</script>
+      </div>
+    </div>
+
+    <div class="row col-lg-12">
+
+      <div class="col-lg-3">
+        <label class="text-primary" for="semester">Semester:</label>
+        <input class="form-control" name="semester" id="semester"  type="text">
+        <script>document.getElementById("semester").value = xSemester;</script>
+     </div>
+
+      <div class="col-lg-3">
+        <label class="text-primary" for="class">Class:</label>
+        <input class="form-control" name="class" id="class" value="MIS202" type="text">
+      </div>
+
+      <div class="col-lg-3">
+        <label class="text-primary" for="section">Section:</label>
+        <!-- Enter your section in the VALUE field below   GROK -->         
+        <input class="form-control" name="section" id="section"  type="text">
+        <script>document.getElementById("section").value = xSection;</script>
+      </div>
+
+      <div class="col-lg-3"> 
+        <label class="text-primary" for="assignment">Assignment:</label>
+        <input class="form-control" name="assignment" id="assignment" value="Summative03" type="text">
+      </div>    
+    </div>
+
+
+        <div class="col-lg-12">
+            <br /><input class="text-danger btn-block btn-lg" name="Submit" value="Submit" type="submit"> <br />
+        </div>
+  
+        <div class="col-lg-12 h3 text-danger">
+            400 Points <hr />
+        </div>
+  
+      <article class="h3">
+        <div class="col-lg-12"><a href="#Objectives" class="btn btn-info"   >Learning Objectives</a></div>
+      </article>
+      
+    <div id="Objectives" class="collapse in"> 
+      <article class="row">
+        <div class="col-lg-12">
+          <p>These exercises help you learn several ways various programs can be used to faciliate written communications.  Programs such as Microsoft OneNote, Word and Lync/Skype have features to improve the quality of your communications, and make more efficient use of your time.</p>
+          <p>After completing this assignment you will be able to use Word to:</p>
+		<ul>
+          <li>create complex documents</li>
+            <li>develop a professional bio to introduce yourself to your classmates</li>
+            <li>create a resume-both document based and web based</li>
+            <li>use business class instant messaging to communicate with coworkers and clients</li>
+            <li>understand how to organize your work and research in an electronic notebook</li>
+          </ul>
+        </div>
+      </article>
+    </div>
+  
+  
+      <article class="h3">
+        <div class="col-lg-12"><a href="#Overview" class="btn btn-info"   >Assignment Overview</a></div>
+      </article>
+      
+      <div id="Overview" class="collapse in">
+      <article class="row">
+        <div class="col-lg-12">This assignment will cover several basic written communication functions, you are encouraged to explore on your own to find additional features that will make your life and present or future jobs easier.<br>
+        Some things you can do include:
+                <ul>
+          <li>Develop a way to market yourself through your bio</li>
+          <li>Using word processing applications for advanced functions, such as creating tables of contents</li>
+          <li>Using OneNote as an electronic notebook to organize your work and facilitate research</li>
+        </ul>
+         <p>Make sure that Word and OneNote 2016 are properly setup on your computer before proceeding.  If necessary, contact Tech Support in Somsen 207 for assistance.
+         </p>
+
+         </div>
+      </article>
+      </div>
+      
+      <article class="h3">
+        <div class=" col-lg-12"><a href="#Exercise01" class="btn btn-info"   >Exercise 1-Professional Bio</a></div>        
+      </article>
+      
+     <div id="Exercise01" class="collapse in"> 
+      <article class="row">
+        <div class="col-lg-12">  
+          <p>To introduce yourself to your classmates you will need to write a brief, professional, third-person bio.<br>
+              The purpose is to describe yourself and your future career plans.<br>
+              <a href="http://smallbusiness.chron.com/write-short-bio-yourself-57289.html">See this link for more details. </a><br>
+          </p>
+        </div>
+      </article>
+      
+      <article class="row"> 
+        <div class="col-lg-12"> 
+          <p>Your task is to create a professional bio. <br>
+          If this is your first attempt, do not worry.  You can always rewrite and update your bio later.</p>
+            <div class="col-lg-12 w3-label w3-text-blue">
+              <p>Using Word or some other text editor develop a short, professional sounding bio.              
+              <p>
+              (50) 1. Copy your bio into the field below. 
+              </p>
+              
+              <!-- Enter your bio in the VALUE field below   GROK -->        
+              <input type="text" name="q1" id="q1" size="120" maxlength="120"   value="Enter your brief bio here"> <br>
+            </div>        
+        </div>  
+    </article>
+</div>    
+
+
+
+      <article class="h3">
+        <div class=" col-lg-12"><a href="#Exercise02" class="btn btn-info"   >Exercise 2-Tables of Contents</a></div>        
+      </article>
+      
+     <div id="Exercise02" class="collapse in"> 
+      <article class="row">
+        <div class="col-lg-12">  
+          <p>Review this Lynda.com video on creating a Table of Contents &quot;<a href="https://www.lynda.com/Office-tutorials/Creating-table-contents-from-other-styles/167073/363723-4.html" target="_blank">Table of Contents</a>&quot; <br>
+            Play the video on one monitor, have Word 2016 open on another monitor.<br>
+            Hint: if you need help, go to Lynda.com and search for 'Word 2016 Basics or Essentials'.<br>
+            
+          </p>
+          <p>
+              
+          </p>
+        </div>
+      </article>
+      
+      <article class="row"> 
+        <div class="col-lg-12"> 
+          <p>Your task is to create table of contents from the <a href="Telecommunications.docx">Telecommunications.docx</a> file.</p>
+            <div class="col-lg-12 w3-label w3-text-blue">
+              <p><strong>Make a screen shot of your Table of Contents and save</strong> your screen shot into your Summative03 folder with a name such as 'Ex02_TOC'. <br>
+              You will be combining screen shots from several exercises at the end of this assignment, similar to what you did in <a href="../../Formative/Formative00/Formative00.asp#Exercise07">Formative00, Exercise 7</a>-Adobe Acrobat Pro File Creation. 
+              <p><br>
+              (50) 2. What must you have created first in Word before you can create a Table of Contents? <br>
+              </p>
+              
+              <!-- Enter your answer in the VALUE field below   GROK -->        
+              <input type="text" name="q2" id="q2" size="120" maxlength="120" value="Enter your brief answer here"> <br>
+            </div>        
+        </div>  
+    </article>
+</div>    
+
+
+
+
+      
+      
+      <article class="h3">
+        <div class="col-lg-12"><a href="#Exercise03" class="btn btn-info"   >Exercise 3-EMail Merge</a></div>
+      </article>
+        <div id="Exercise03" class="collapse in">  
+          <article class="row">
+            <div class="col-lg-12">
+              <p>Use Word to create an email that you will distribute.</p>  
+              <p>Review this Lynda.com video on Using Email Merge &quot;<a href="https://www.lynda.com/Office-tutorials/What-email-merge-can-do-you/196580/366658-4.html" target="_blank">Mail Merge in Depth</a>&quot; <br>
+            Play the video on one monitor, have Word 2016 open on another monitor.<br>
+            Hint: if you need help, go to Lynda.com and search for 'Word 2013: Mail Merge in Depth or similar courses'.<br></p>
+        
+                <div class="col-lg-12 w3-label w3-text-blue">
+                <p>Type in the values manually for your mail merge.<br>
+                Use your own words to create the word document. <br>
+                One suggestion is to invite friends to a gathering, include the subject, location, date and time at a minimum.<br>
+                When you are done with the merge, <strong>print out any one of the resultant documents as a .pdf file</strong> and <strong>save it in your &#39;Summative03 folder&#39; with a name like 'Ex03_MailMerge.pdf'</strong>. <br>
+                 You will be combining screen shots and files from several exercises at the end of this assignment, similar to what you did in Formative00, Exercise 7-Adobe Acrobat Pro File Creation. 
+                </p>
+                
+                   <p>(50) 3. Briefly describe the importance of using the Word Email Merge feature.<br>
+                   Hint: Answer the question 'how can I communicate quickly with many people, but still be professional?'</p>
+                  
+                   <!-- Enter your answer in the VALUE field below   GROK -->        
+                   <input type="text" name="q3" id="q3" size="120" maxlength="120" value="Enter your answer here"> <br>
+                </div>       
+            </div>
+          </article>
+       </div>
+      
+      
+
+      <article class="h3">
+         <div class="col-lg-12"><a href="#Exercise04" class="btn btn-info"   >Exercise 4-Resume</a></div>
+      </article>
+     
+        <div id="Exercise04" class="collapse in">  
+          <article class="row">
+            <div class="col-lg-12">
+              <p>Consider the impact on your resume on your career.<br>
+              Using Word, create or update and save a copy of your resume in an appropriate location.<br>
+              From Word, save your resume in both .docx format and as a web page in .htm format. <br>
+              If you have not done a resume before, feel free to contact Career Services for assistance.<br>
+                      
+              </p>          
+                <div class="col-lg-12 w3-label w3-text-blue">
+                <p>When you are done with your resume, print it as a .pdf file and save it in an appropriate location such as your Summative03 folder, with a name such as 'Ex04_Resume.pdf'. <br>
+                 You will be combining screen shots and files from several exercises at the end of this assignment, similar to what you did in Formative00, Exercise 7-Adobe Acrobat Pro File Creation.</p> 
+                   <p>(50) 4. <strong>Create a hyperlink</strong> to your 'MyResume.htm' text below. </p>
+                    <p><strong>Note:&nbsp; Do not worry if the resume.htm appearance is very bad.&nbsp; This is not your fault, it is due to problems converting Word document formatting to html code.</strong></p>
+                   
+                   <!-- Create your hyperlink below   GROK -->      
+                   <h1 ><strong> MyResume.htm</strong></h1>
+                </div>       
+            </div>
+          </article>
+       </div>
+      
+      
+      
+      <article class="h3">
+        <div class="col-lg-12"><a href="#Exercise05" class="btn btn-info"  >Exercise 5-Organizing Notes</a></div>
+      </article>
+      
+         <div id="Exercise05" class="collapse in">  
+          <article class="row">
+            <div class="col-lg-12">
+              <p>Use OneNote to create a notebook that contains a section for each class that you are taking this semester.<br>
+              </p>          
+                <div class="col-lg-12 w3-label w3-text-blue">
+                   <p><strong>Make a screen shot</strong> of your notebook showing the different sections.<br>
+                   Save your screen shot in an appropriate location such as your Summative03 folder with a <strong>name such as 'Ex05_OneNote.jpg'</strong>. <br>
+              You will be combining screen shots from several exercises at the end of this assignment, similar to what you did in Formative00, Exercise 7-Adobe Acrobat Pro File Creation. </p>
+                   <p>(50) 5. Briefly list 3 advantages of using a OneNote notebook to organize and store notes and research on the latest trends in Information and Communications Technology (ICT).</p>
+                  
+                   <!-- Enter your answer in the VALUE field below   GROK -->        
+                   <input type="text" name="q5" id="q5" size="120" maxlength="120" value="Enter your answer here"> <br>
+                </div>       
+            </div>
+          </article>
+       </div>
+       
+      
+     
+      <article class="h3">
+        <div class="col-lg-12"><a href="#Exercise06" class="btn btn-info"  >Exercise 6-PDF File Creation</a></div>
+      </article>
+      
+    <div id="Exercise06" class="collapse in"> 
+      <article class="row">
+        <div class="col-lg-12"> 
+        <p>Open File Explorer and follow the same steps from <a href="../../../Formative00/Formative00.asp#Exercise07">Formative00 Exercise 7</a> to combine your screen shots into one .pdf file.<br>
+         You will create one .pdf (portable document format) file from the two screen shots that you have taken.</p>
+        <ol>
+            
+          <li> Make sure to select all of the screen shot files. </li>         
+          <li>Right Click and selct Print.      </li>    
+          <li>Save the file with a name such as &quot;Summative03ScreenShots.pdf&quot; in an appropriate location such as your Summative03 folder, where you can easily find it again.</li>
+            <li>Remember to use PDFill to Merge the screen shot .pdf file with your&nbsp; other .pdf file(s). Save this combined pdf (screen shots and your Summative03 pdf file) as Summative03_Combined.pdf<br>
+            <br></li>
+          </ol>
+                <div class="col-lg-12 w3-label w3-text-blue">
+        <p>(100) 7. Upload your file 'Summative03_Combined.pdf' to the D2L 'Summative03' Assignment folder.</p>
+
+        </div>
+        </div> 
+      </article>
+    </div>
+
+
+      <article class="h3">
+        <div class="col-lg-12"><a href="#Exercise07" class="btn btn-info"  >Exercise 7-Assignment Submission</a></div>
+      </article>
+ 
+     <div id="Exercise07" class="collapse in">
+      <article class="row">
+        <div class="col-lg-12"><p>In this exercise, please read all of these instructions first.<br>
+        Make sure that you have completed all the exercises by filling in your answers, publishing them and checking your website.<br>
+        </p>
+        </div>
+        <div>          
+        <div class="col-lg-12 w3-label w3-text-blue">
+        (50) 7. Assignment submission<br>
+        When these tasks are complete press the Submit button below.
+        </div>  
+        </div>     
+      </article>
+     </div>
+
+ 
+ 
+ 
+     
+      <div class="row">
+        <div class="col-lg-12"><input class="w3-input w3-border w3-text-red" type="submit" name="Submit" value="Submit"></div>
+      </div>
+  
+  </form> 
+ 
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+	<script src="../../../js/jquery-1.11.3.min.js"></script>
+
+	<!-- Include all compiled plugins (below), or include individual files as needed --> 
+	<script src="../../../js/bootstrap.js"></script>
+  </body>
+</html>
