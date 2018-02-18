@@ -1,0 +1,442 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap -->
+	<link href="../css/bootstrap.css" rel="stylesheet">
+
+    <!-- constant file to update email, firstname, lastname, starid, section on students' pages -->
+    <script src="../js/constants.js"></script>
+
+    <!-- something wrong with this file, does not load variables, esp for footer/license, added script tags throughout document -->
+    <!-- <script src="..js/main.js"></script> -->
+
+    <title>MIS202Summative02</title>
+
+
+</head>
+
+<body onload="setVariables()"> 
+
+  <form class="container-fluid" action="https://eprofessor.azurewebsites.net/code/ProcessFormData.asp" method="post" name="frmAssignment" id="frmAssignment">
+    <input name="InstID" id="InstID" value="00617282" type="hidden">
+
+    <h1 class=" text-center">Personal Information Management</h1>
+
+
+    <div class="row col-lg-12">
+
+      <div class="col-lg-3">
+        <label class="text-primary" for="email">Email:</label>
+        <!-- Enter your winona.edu email address in the VALUE field below   GROK --> 
+        <input class="form-control" name="email" id="email"    type="email">
+        <script>document.getElementById("email").value = xeMail;</script>
+      </div>
+
+      <div class="col-lg-3">
+        <label class="text-primary" for="FirstName">First Name:</label>
+        <!-- Enter your first name in the VALUE field below   GROK --> 
+        <input class="form-control" name="FirstName" id="FirstName"  type="text">
+        <script>document.getElementById("FirstName").value = xFirstName;</script>
+      </div>
+      <div class="col-lg-3">
+        <label class="text-primary" for="LastName">Last Name:</label>
+        <!-- Enter your last name in the VALUE field below   GROK --> 
+        <input class="form-control" name="LastName" id="LastName"  type="text">
+        <script>document.getElementById("LastName").value = xLastName;</script>
+      </div>
+
+      <div class="col-lg-3">
+        <label class="text-primary" for="pin">StarID:</label>
+        <!-- Enter your starID in the VALUE field below   GROK -->         
+        <input class="form-control" name="pin" id="pin"  type="text">
+        <script>document.getElementById("pin").value = xStarID;</script>
+      </div>
+    </div>
+
+    <div class="row col-lg-12">
+
+      <div class="col-lg-3">
+        <label class="text-primary" for="semester">Semester:</label>
+        <input class="form-control" name="semester" id="semester"  type="text">
+        <script>document.getElementById("semester").value = xSemester;</script>
+     </div>
+
+      <div class="col-lg-3">
+        <label class="text-primary" for="class">Class:</label>
+        <input class="form-control" name="class" id="class" value="MIS202" type="text">
+      </div>
+
+      <div class="col-lg-3">
+        <label class="text-primary" for="section">Section:</label>
+        <!-- Enter your section in the VALUE field below   GROK -->         
+        <input class="form-control" name="section" id="section"  type="text">
+        <script>document.getElementById("section").value = xSection;</script>
+      </div>
+
+      <div class="col-lg-3"> 
+        <label class="text-primary" for="assignment">Assignment:</label>
+        <input class="form-control" name="assignment" id="assignment" value="Summative02" type="text">
+      </div>    
+    </div>
+
+
+        <div class="col-lg-12">
+            <br /><input class="text-danger btn-block btn-lg" name="Submit" value="Submit" type="submit"> <br />
+        </div>
+  
+        <div class="col-lg-12 h3 text-danger">
+            600 Points <hr />
+        </div>
+      
+  
+    <div class="col-lg-12"><a href="#Objectives" class="btn btn-info" data-toggle="collapse">Learning Objectives</a></div>      
+      <div id="Objectives" class=" collapse in col-lg-12">
+          <p>These exercises provide experience with the Outlook Desktop client application to organize your work, and make more efficient use of your time.</p>
+          <p>After completing this assignment you will be able to use the Outlook Desktop client to:</p>
+
+		<ul>
+            <li>create a meeting appointment</li>
+            <li>add a signature block to emails</li>
+            <li>create and attach a vcard to your emails</li>
+            <li>create a recurring appointment</li>
+            <li>understand how businesses can work together more effectively</li>
+            <li>subscribe to a calendar feed (.ics) from D2L</li>
+          </ul>
+          <hr />
+    </div>
+  
+
+
+  
+        <div class="col-lg-12"><a href="#Overview" class="btn btn-info" data-toggle="collapse">Assignment Overview</a></div>
+      
+      <div id="Overview" class="collapse in  col-lg-12">
+            The purpose of this assignment is to introduce you to the power of personal information management programs. 
+            The Microsoft Outlook Desktop client (not Office 365 or the cloud version) will be the application used. 
+            Modern businesses depend on email, which Outlook can handle.
+            There are many other features and add-ons that can be combined with Outlook to make the communication process more efficient. 
+            Some of these are: 
+        <ul>
+          <li>Using calendaring to schedule your day, meetings and resources</li>
+          <li>Adding the Linked-In toolbar to simplify looking up information on your connections while using Outlook</li>
+          <li>Using Microsoft Lync/Skype for Business as an Instant Messaging client that displays your status based on your Outlook calendar</li>
+        </ul>
+
+        <p>This assignment will cover several basic Outlook features, you are encouraged to explore on your own to find additional features that will make you more productive.</p>
+        <p>Make sure that Outlook 2016 is properly setup on your computer before proceeding.<br />
+           If necessary, contact Tech Support in Somsen 207 for assistance.
+         </p>
+         <hr />
+
+         </div>
+
+      
+     <div class=" col-lg-12"><a href="#Exercise01" class="btn btn-info" data-toggle="collapse">Exercise 1-Simple Appointment</a></div>        
+      
+         <div id="Exercise01" class="collapse in  col-lg-12"> 
+          <p>Review this Lynda.com video on creating an Outlook Appointment "<a href="https://www.lynda.com/Office-tutorials/Create-appointment-event/417090/481304-4.html" class="bg-info text-white" target="_blank">Outlook Appointment</a>" <br>
+            Play the video on one monitor, have Outlook 2016 open on another monitor.<br>
+            Hint: if you need help, go to Lynda.com and search for 'Outlook 2016'. <br />
+              There is a very good 48m video <a href="https://www.lynda.com/Office-tutorials/Up-Running-Outlook-2016/432365-2.html" class="bg-info text-white">Learn Outlook 2016</a>, and more.<br />
+          </p>
+
+      
+        <div class=" col-lg-12"> 
+          <p>Your task is to create an Outlook appointment for yourself to set aside time to study for this course.</p>
+            <div class="text-primary">
+              <p>(50) 1. Use the Snipping Tool to make a screen shot of the item you created in the Outlook calendar. <br />
+
+         <!--  PgP 2/4/2018 create path using constants and current document assignment -->           
+              Save the screen shot  as &quot;Ex1&quot; in your ' <span id="aPath" ></span>              
+             <script>document.getElementById("aPath").innerHTML = xxPath + document.getElementById("class").value + "/"  + document.getElementById("assignment").value + xzPath; </script> ' folder.  <br /> 
+
+                  You will be combining screen shots from several exercises at the end of this assignment, just as you did in Formative00, Exercise 8-PDF File Creation. 
+              </p>
+                <p> (50) 1. How can this task be accomplished using the Outlook calendar? <br>
+              </p>
+              
+              <!-- Enter your answer in the VALUE field below   GROK -->        
+              <input name="q1" id="q1" size="120" maxlength="120" class="form-control" value="Enter your brief answer here" type="text"> <br>
+            </div>        
+        </div>  
+      </div>
+
+      <div  class="col-lg-12 text-danger" >
+         <h2>Screen Shot Ex1</h2>
+          <hr />
+      </div>
+
+
+
+    <div class=" col-lg-12"><a href="#Exercise02" class="btn btn-info" data-toggle="collapse">Exercise 2-Signature Block</a></div>        
+      
+     <div id="Exercise02" class="collapse in  col-lg-12"> 
+          <p>Review this Lynda.com video on creating an Outlook Appointment "<a href="https://www.lynda.com/Outlook-tutorials/Adding-signatures/377829/431824-4.html" class="bg-info text-white" target="_blank">Outlook Signature</a>" <br>
+            Play the video on one monitor, have Outlook 2016 open on another monitor.<br>
+            Hint: if you need help, go to Lynda.com and search for 
+'Outlook 2016 basics'.  There is a very good 49m video 'Learn Outlook 
+2016: The Basics', and more.<br>
+          </p>
+          <p>
+              
+          </p>
+      
+        <div class=" col-lg-12"> 
+          <p>Your task is to create an Outlook signature block that contains a Business Card for your emails.</p>
+            <div class="text-primary">
+              <p>Make a screen shot of an email containing a signature block and a Business Card in Outlook. <br>
+              It will look something like this:<br>
+              <img src="EmailSignature.jpg" class="img-responsive"  alt="Signature Block with Business Card" width="712" height="673"> <br><br>
+         <!--  PgP 2/4/2018 create path using constants and current document assignment -->           
+              Save the screen shot  as &quot;Ex2&quot; in your ' <span id="bPath" ></span>              
+             <script>document.getElementById("bPath").innerHTML = xxPath + document.getElementById("class").value + "/" + document.getElementById("assignment").value + xzPath; </script> ' folder.  <br /> 
+
+              </p><p><br>
+              (50) 2. What must you create first in Outlook before you can create a Business Card? <br>
+              </p>
+              
+              <!-- Enter your answer in the VALUE field below   GROK -->        
+              <input name="q2" id="q2" size="120" maxlength="120" class="form-control" value="Enter your brief answer here" type="text"> <br>
+            </div>        
+        </div>  
+      </div>    
+
+
+      <div  class="col-lg-12 text-danger" >
+         <h2>Screen Shot Ex2</h2>
+          <hr />
+      </div>
+
+      
+      
+        <div class="col-lg-12"><a href="#Exercise03" class="btn btn-info" data-toggle="collapse">Exercise 3-Test Email</a></div>
+        <div id="Exercise03" class="collapse in  col-lg-12">  
+              <p>Send a test email to yourself.</p>          
+                <div class="text-primary">
+                   <p>(50) 3. Briefly describe the reason to send a test email to yourself.<br>
+                   Hint: Answer the question 'what does it mean if I do not receive the test email?'</p>
+                  
+                   <!-- Enter your answer in the VALUE field below   GROK -->        
+                   <input name="q3" id="q3" size="120" maxlength="120" class="form-control" value="Enter your answer here" type="text"> <br>
+                </div>  
+                 <hr /> 
+          </div>
+      
+      
+
+         <div class="col-lg-12"><a href="#Exercise04" class="btn btn-info" data-toggle="collapse">Exercise 4-Spelling &amp; Grammar</a></div>
+      
+     
+        <div id="Exercise04" class="collapse in  col-lg-12">  
+              <p>Consider the impact on your professional reputation of incorrect spelling and poor grammar.</p>          
+                <div class="text-primary">
+                   <p>(50) 4. Briefly explain why it is a good ideas to spell and grammar check all emails before you press Send.</p>
+                  
+                   <!-- Enter your answer in the VALUE field below   GROK -->        
+                   <input name="q4" id="q4" size="120" maxlength="120" class="form-control" value="Enter your answer here" type="text"> <br>
+                </div>   
+              <hr />           
+       </div>
+      
+      
+
+      
+        <div class="col-lg-12"><a href="#Exercise05" class="btn btn-info" data-toggle="collapse">Exercise 5-Recurring Appointment</a></div>
+      
+         <div id="Exercise05" class="collapse in  col-lg-12">  
+              <p>Use Outlook to create a recurring appointment with the following settings:<br>
+              </p><ul>
+              	<li>Subject: MIS202 class meeting </li>
+                <li>Location: Somsen 301 </li>
+                <li>Start time: use the start time for your section</li>
+                <li>End time: use the end time for your section</li>
+                <li>Recurrence pattern: Weekly, every 1 week on Tuesday and Thursdays</li>
+                <li>Range of recurrence: end by last day of class</li>
+              </ul>
+              <p></p>          
+                <div class="text-primary">
+                   <p>Make a screen shot of your recurring appointment settings from the Outlook dialog box.<br>
+         <!--  PgP 2/4/2018 create path using constants and current document assignment -->           
+              Save the screen shot  as &quot;Ex5&quot; in your ' <span id="cPath" ></span>              
+             <script>document.getElementById("cPath").innerHTML = xxPath + document.getElementById("class").value + "/" + document.getElementById("assignment").value + xzPath; </script> ' folder.  <br /> 
+
+</p>
+                   
+                   <p>(50) 5. Briefly describe the value of creating recurring appointments.</p>
+                  
+                   <!-- Enter your answer in the VALUE field below   GROK -->        
+                   <input name="q5" id="q5" size="120" maxlength="120" class="form-control" value="Enter your answer here" type="text"> <br>
+                </div>       
+            </div>
+
+      <div  class="col-lg-12 text-danger" >
+         <h2>Screen Shot Ex5</h2>
+          <hr />
+      </div>
+  
+      
+        <div class="col-lg-12"><a href="#Exercise06" class="btn btn-info" data-toggle="collapse">Exercise 6-Calendar Feeds</a></div>
+      
+    <div id="Exercise06" class="collapse in  col-lg-12">
+        <p>In this exercise, please read all of these instructions first.<br>
+        You are going to create a calendar feed from D2L for this course, and install this feed into Outlook so that you know all the assignment due dates for this course.<br>
+        Using your browser, please login to D2L and find this course.</p>
+        <ol>
+        	<li> Click on Calendar, then Settings, then make sure 'Enable Calendar Feeds' is checked
+            <br>
+             <br><img src="EnableCalendarFeeds.png" class="img-fluid img-responsive img-rounded" alt="enable calendar feeds" width="703" height="616"><br />
+            </li>
+            <li>On the home page click the inverted triangle to the right of 'Calendar' and select 'Subscribe'
+            <img src="D2LCalendarFeed.jpg" class="img-fluid img-responsive img-rounded" alt="D2L subscribe to calendar feed" width="985" height="544"> <br />
+            </li>
+            <li>Select this course from the drop-down list. Follow the instructions to place the URL into Outlook.  This means copy the url presented in the dialog box.
+            <img src="CalendarSubscriptionURL.png" class="img-fluid img-responsive img-rounded" alt="calendar feed url" width="696" height="244"> <br />
+            </li>
+            <li>Open Outlook,<br>
+             click on File,<br>
+              then click on the Account Settings button, <br>
+              then click Account Settings..., <br>
+              Select the 'Internet Calendars' tab <br>
+              then click the 'New...' button<br>
+              then paste the feed<br>
+              <img src="PasteFeed.PNG" class="img-fluid img-responsive img-rounded" alt="paste feed" width="614" height="413"><br />
+             </li>
+          </ol>
+        <p></p>
+        <div>   
+            
+
+        <div class="col-lg-12 text-primary">
+        (100) 6. Calendar Feeds<br>
+        When these tasks are completed paste your calendar feed url in the text box below.<br>
+        
+        <!-- Enter your answer in the VALUE field below   GROK -->        
+        <input name="q6" id="q6" size="120" maxlength="120" class="form-control" value="Enter your calendar feed url here" type="text"> <br>
+
+            </div>  
+          <hr />
+        </div>
+
+        </div>     
+     
+     
+     
+    <div class="col-lg-12"><a href="#Exercise07" class="btn btn-info" data-toggle="collapse">Exercise 7-PDF File Creation</a></div>
+      
+    <div id="Exercise07" class="collapse in  col-lg-12"> 
+            <p>Use a web browser to verify that you have published your website to https://classes.winona.edu/... <br />
+                Check that your name, email, course, semester, section and all of your answers are correct and visible. <br />
+                From the menu choose File&gt;Print... and using &quot;Microsoft Print to PDF&quot; save a copy of this assignment as a .pdf file in your   ' <span id="dPath" ></span>              
+<script>document.getElementById("dPath").innerHTML = xxPath + document.getElementById("class").value + "/" + document.getElementById("assignment").value + xzPath; </script>' folder.<br /> 
+</p>
+           <br />
+               
+        <div class="text-primary">
+          <p>(50) 7. Save your file 'WebPage.pdf' to the ' <span id="ePath" ></span>              
+<script>document.getElementById("ePath").innerHTML = xxPath + document.getElementById("class").value + "/" + document.getElementById("assignment").value + xzPath; </script>' folder.<br /> 
+
+
+          </p>
+        </div>
+
+      <div  class="text-danger" >
+         <h2>WebPage.pdf</h2>
+          <hr />
+      </div>
+
+               <p>  Create one .pdf (portable document format) file from the screen shots that you have taken by following these steps.</p>
+        
+        <ol>
+            
+              
+          <li> Open File Explorer, make sure the screen shot files are properly named(Ex1, Ex2 , Ex3.. ) &nbsp; </li>
+            <li> Select all of the screen shots to be combined. </li>         
+          <li>Right Click and select &#39;Print&#39; from the short-cut menu.      </li>
+            <li>In the bottom center of the &#39;Print Pictures&#39; dialog box uncheck the box &quot;Fit picture to frame&quot;</li>    
+            <li>Click on &#39;Print&#39; and save the file with the name&nbsp; &quot;ScreenShots.pdf&quot; in your 
+' <span id="fPath" ></span>              
+<script>document.getElementById("fPath").innerHTML = xxPath + document.getElementById("class").value + "/" + document.getElementById("assignment").value + xzPath; </script>' folder.<br /> 
+
+            </li>
+          </ol>
+
+
+        <div class="text-primary">
+          <p>(50) 8. Save your file 'ScreenShots.pdf' to the 
+' <span id="gPath" ></span>              
+<script>document.getElementById("gPath").innerHTML = xxPath + document.getElementById("class").value + "/" + document.getElementById("assignment").value + xzPath; </script>' folder.<br /> 
+
+          </p>
+        </div>
+
+      <div  class="text-danger" >
+         <h2>ScreenShots.pdf</h2>
+          <hr />
+      </div>
+
+
+       <p>  &nbsp;</p>
+         <p>  Use PDFill to merge the <strong>WebPage.pdf</strong> file with the <strong>ScreenShots.pdf </strong>file, and save it as &#39;<strong>Summative02.pdf</strong>&#39; in
+' <span id="iPath" ></span>              
+<script>document.getElementById("iPath").innerHTML = xxPath + document.getElementById("class").value + "/" + document.getElementById("assignment").value + xzPath; </script>' folder.<br /> 
+
+         </p>
+
+
+     <div class="text-primary">
+        <p>(50) 9. Upload your file 'Summative02.pdf' to the D2L 'Summative02' Assignment folder.</p>
+     </div>
+
+      <div  class="text-danger" >
+         <h2>Summative02.pdf</h2>
+      </div>
+      <hr />
+
+        </div> 
+
+
+
+
+  <div class="col-lg-12"><a href="#Exercise08" class="btn btn-info" data-toggle="collapse">Exercise 8-Assignment Submission</a></div>
+ 
+     <div id="Exercise08" class="collapse in  col-lg-12">
+                <p>Use a browser to view your completed and published website at: https://classes.winona.edu/...      <br />  
+                Note that your screen shots do not have to be completed to perform this step.<br>  </p>
+
+        <div>          
+            <div class="text-primary">
+            (50) 10. Assignment submission<br>
+            Press the Submit button at the top or bottom of this page.
+            </div> 
+           <hr />
+
+        </div>  
+  
+       </div>
+ 
+     
+        <div class=" col-lg-12"><br /><input class="text-danger btn-block btn-lg" name="Submit" value="Submit" type="submit"> <br /></div>
+
+  
+  </form> 
+
+
+
+    <!-- Creative Commons License Info -->
+    <div id="xLicense" class=" col-lg-12 text-muted" ></div>
+    <script>document.getElementById("xLicense").innerHTML = ccLicense;</script>
+
+   <div id="xfooter" class=" col-lg-12 text-muted"></div>
+   <script>document.getElementById("xfooter").innerHTML = Date();</script> 
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+	<script src="../js/jquery-1.js"></script>
+
+	<!-- Include all compiled plugins (below), or include individual files as needed --> 
+	<script src="../js/bootstrap.js"></script>
+  
+</body></html>
